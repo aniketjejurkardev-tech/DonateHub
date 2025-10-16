@@ -18,7 +18,14 @@ The project includes:
 
 ## ⚙️ Project Setup
 
-Before running the project, set it up using the following commands:
+Clone the repository:
+
+```bash
+git clone https://github.com/aniketjejurkardev-tech/DonateHub.git
+cd DonateHub
+```
+
+Install dependencies:
 
 ```bash
 yarn init
