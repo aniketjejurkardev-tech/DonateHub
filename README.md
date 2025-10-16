@@ -201,7 +201,7 @@ The coverage report tells us how much of our code got tested. Most of DonateHub.
 The project is organized as follows:
 
 ```bash
-backend/
+/
 ├── contracts/
 │   ├── DonateHub.sol
 │   ├── PriceConverter.sol
@@ -223,6 +223,9 @@ backend/
 │       └── DonateHub.staging.test.js
 ├── helper-hardhat-config.js
 ├── hardhat.config.js
+├── .env.example
+├── gas-report.txt
 ├── package.json
+├── yarn.lock
 └── README.md
 ```
