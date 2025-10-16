@@ -127,11 +127,27 @@ SEPOLIA_RPC_URL=your_rpc_url_here
 PRIVATE_KEY=your_wallet_private_key
 ```
 
+Where to get these:
+
+- **SEPOLIA_RPC_URL** – Sepolia node endpoint from:
+
+  - [Alchemy](https://www.alchemy.com/)
+  - [Infura](https://infura.io/)
+  - [QuickNode](https://www.quicknode.com/)
+
+- **PRIVATE_KEY** – Wallet private key from MetaMask:
+  1. Open MetaMask and select your account.
+  2. Click the three dots → **Account Details** → **Export Private Key**.
+  3. Copy and paste it into the `.env` file (keep it secret!).
+
 Then run:
 
 ```
 npx hardhat run deploy/01-deploy-donateHub.js --network sepolia
 ```
+
+This will deploy the smart contract to the Sepolia testnet. You can verify it on [Etherscan](https://sepolia.etherscan.io/)
+by searching for the deployed contract address.
 
 ### 3. Running Scripts
 
@@ -179,6 +195,17 @@ module.exports = {
     coinmarketcap: process.env.COINMARKETCAP_API_KEY,
   },
 };
+```
+
+Where to get `COINMARKETCAP_API_KEY`:
+
+1. Go to [CoinMarketCap](https://coinmarketcap.com/api/) API.
+2. Sign up or log in.
+3. Create a free API key.
+4. Add it to your .env file:
+
+```
+COINMARKETCAP_API_KEY=your_api_key_here
 ```
 
 Then run the tests:
